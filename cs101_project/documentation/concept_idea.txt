@@ -1,0 +1,63 @@
+
+Think of an Idea ---------------------------------------------------------------
+
+Take some time to think of an idea for your project. 💡
+
+Some questions you can ask yourself is:
+
++ Who do you want to build something for? Yourself? Your friends? Your family?
+Your co-workers?
+
+R/ Myself
+
+What are your/their hobbies?
+
+R/ My hobbie is Data science
+
++ Do you want to build something more fun or something more useful?
+
+R/ Build something for fun
+
+
+Idea: 
+
+1) Use Rstudio ✅
+
+2) Set up an RStudio project ✅
+
+3) Set a virtual environment in RStudio using pipenv, see Mauro's email on how 
+to set an enviroment. 
+
+4) Load an image using input(). In this case, the user will specify the path where
+the image is stored and immediately will be showed in the terminal. The user 
+will be able to load one or several images. ✅  
+
+4.1) How to include an external dependency in a pipenv pipfile? In this case if the
+user does not have magick to open the image how to include this external depependecy
+in the pipenv? No idea how to do it🤷 
+
+5) Count the colours in a image. How many colors does an image has? ✅
+
+6) Run k-means algorithm to reduce the number of colors in the image.
+
+6.1) Return the new image with the new number of colors. 
+
+8) Add functinality to return image in black and black and white if the users 
+wants it.
+
+9) The program should look like the Example Project in the overview page of
+codecademy. Search how to do this.
+
+10) Add evevething to a docker image
+https://www.martinalarcon.org/2018-12-31-a-reproducible-science/
+https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science
+https://support.terra.bio/hc/en-us/articles/360024737591-Make-a-Docker-container-image-the-easy-way-using-a-base-image
+https://www.samples-of-thoughts.com/2019/reproducible-data-science/
+
+
+
+
+
+
+
+
