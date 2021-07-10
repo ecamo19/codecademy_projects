@@ -12,6 +12,7 @@ image = "*"
 pillow = "*"
 matplotlib = "*"
 sklearn = "*"
+argh = "*"
 
 [dev-packages]
 
