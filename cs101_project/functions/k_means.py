@@ -23,7 +23,7 @@ def reduce_colors(img_kmeans, number_of_colors):
     #(cv2.TERM_CRITERIA_MAX_ITER, 300)
 
 
-    ret, labels, clusters = cv2.kmeans(reshaped_image, number_clusters, None, stopCriteria, 10, cv2.KMEANS_RANDOM_CENTERS)
+    ret, labels, clusters = cv2.kmeans(reshaped_image,k, None, stop_criteria, 10, cv2.KMEANS_RANDOM_CENTERS)
 
 
     clusters = np.uint8(clusters)
@@ -40,9 +40,7 @@ if __name__ == '__main__':
 
 # Test function -----------------------------------------------------------------
 
-path_to_image = '/home/ecamo19/Documents/cursos_libros_tutoriales/cursos/codeacademy/codecademy_projects/cs101_project/test_images/bird.png'
-img = cv2.imread(path_to_image, cv2.COLOR_BGR2RGB)
-img_kmeans = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-Image.fromarray(img_kmeans).show()
-
-
+#Image.fromarray(img_kmeans).show()
+# image = Image.open(path_to_image)
+# image_array = np.array(image)
+# reduce_colors(image_array, number_of_colors = 5)

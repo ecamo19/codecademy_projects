@@ -8,6 +8,8 @@ import argh
 from functions.count_colors import *
 from functions.k_means import *
 
+
+
 # -------------------------------------------------------------------------------
 print("\nPlease,enter the path where your image is stored")
 print("\tpath example: '/path/to/image.jpg'")
@@ -19,7 +21,7 @@ while True:
 # Get image path from user ------------------------------------------------------
  
     path_to_image = input("\nPath to image:")
-    
+    global image
     if path_to_image == "quit":
         flag = False
         print("\n\tBye!\n")
@@ -35,11 +37,12 @@ while True:
         # Read image PIL, here the image is not an array
         image = Image.open(path_to_image) 
         
-        #Probar se image sirve en el kmeans
+        # Image for kmeans
+        img_kmeans = np.array(image)
         
-        # images for kmeans
-        img = cv2.imread(path_to_image, cv2.COLOR_BGR2RGB)
-        img_kmeans = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        # # images for kmeans
+        # img = cv2.imread(path_to_image, cv2.COLOR_BGR2RGB)
+        # img_kmeans = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         
 # Count colors function ---------------------------------------------------------
@@ -48,15 +51,26 @@ while True:
 
 # Reduce colors -----------------------------------------------------------------
         print("\nDo you want to reduce the colors of your image:")
-        reduce_colors = input("yes or no: ")
+        quantization = input("yes or no: ")
         
         if reduce_colors == "no":
             flag = False
             print("\n\tBye!\n")
             break 
-            
+           
         else:
             number_of_colors = int(input("How many colors do you want to display: "))
-            reduce_colors(img_kmeans,number_of_colors)
-           
+            reduce_colors(img_kmeans, number_of_colors = number_of_colors)
+            
+            print("\nDo you want to save your new image:")
+            save_image = input("yes or no: ")
+            
+            if save_image == "no":
+                continue
+            else:
+                print("Start working here!")
+            
+            
+            
+
 
