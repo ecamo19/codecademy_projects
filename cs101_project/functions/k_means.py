@@ -8,13 +8,14 @@ def reduce_colors(img_kmeans, number_of_colors):
     '''
     # see this https://muthu.co/reduce-the-number-of-colors-of-an-image-using-k-means-clustering/
     #https://programmerbackpack.com/k-means-clustering-for-image-segmentation/
-
+    #https://docs.opencv.org/4.5.2/d1/d5c/tutorial_py_kmeans_opencv.html
     '''
     # Transform to 2d array
     # Our image has a width w and a height h, and we need to transform the shape of the 
     # image into a Nx3 shape, where N is the w*h product, and 3 is for the 3 colors. 
     # This is needed so that we can pass the image to the kmeans method of opencv.
-
+    
+    global clustered_image
     reshaped_image = np.float32(img_kmeans.reshape(-1, 3))
 
     k = number_of_colors
@@ -27,12 +28,13 @@ def reduce_colors(img_kmeans, number_of_colors):
 
 
     clusters = np.uint8(clusters)
-    intermediateImage = clusters[labels.flatten()]
+    intermediate_image = clusters[labels.flatten()]
 
-
-    clusteredImage = intermediateImage.reshape((img_kmeans.shape))
-    Image.fromarray(clusteredImage).show()
-
+    
+    clustered_image = intermediate_image.reshape((img_kmeans.shape))
+    
+    return clustered_image
+    
 
 if __name__ == '__main__':
     argh.dispatch_command(reduce_colors)

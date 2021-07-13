@@ -41,7 +41,7 @@ def count_colors(image):
                 color_count[rgb] = 1
     
     # Print the total number of colours.
-    print(f'\nYour image has {len(color_count.keys())} different colors\n')
+    print(f'\n> Your image has {len(color_count.keys())} different colors\n')
 
 
 if __name__ == '__main__':
@@ -50,10 +50,10 @@ if __name__ == '__main__':
 
 # Test function -----------------------------------------------------------------
 # Load packages
-import cv2
-from PIL import Image
-import numpy as np
-import argh
+# import cv2
+# from PIL import Image
+# import numpy as np
+# import argh
 
 # path_to_image = '/home/ecamo19/Documents/cursos_libros_tutoriales/cursos/codeacademy/projects/cs101_final_project/test_images/bird.png'
 #          
