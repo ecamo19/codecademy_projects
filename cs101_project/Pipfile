@@ -13,6 +13,7 @@ pillow = "*"
 matplotlib = "*"
 sklearn = "*"
 argh = "*"
+tqdm = "*"
 
 [dev-packages]
 
