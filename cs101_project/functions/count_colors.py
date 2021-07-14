@@ -1,3 +1,4 @@
+import argh
 
 # Count number of colors in image -----------------------------------------------
 
