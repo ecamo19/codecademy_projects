@@ -5,15 +5,11 @@ name = "pypi"
 
 [packages]
 numpy = "*"
-scipy = "*"
 opencv-python = "*"
-h5py = "*"
 image = "*"
 pillow = "*"
-matplotlib = "*"
-sklearn = "*"
 argh = "*"
-tqdm = "*"
+glob2 = "*"
 
 [dev-packages]
 
