@@ -6,9 +6,8 @@ import numpy as np
 
 def reduce_colors(img_kmeans, number_of_colors):
     '''
-    # see this https://muthu.co/reduce-the-number-of-colors-of-an-image-using-k-means-clustering/
-    #https://programmerbackpack.com/k-means-clustering-for-image-segmentation/
-    #https://docs.opencv.org/4.5.2/d1/d5c/tutorial_py_kmeans_opencv.html
+    This function was develop following:
+    https://docs.opencv.org/4.5.2/d1/d5c/tutorial_py_kmeans_opencv.html
     '''
     # Transform to 2d array
     # Our image has a width w and a height h, and we need to transform the shape of the 
