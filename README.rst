@@ -1,7 +1,7 @@
 This repository perform two tasks: 
 
 + Count the total number of colors in a image. This is done by the function called count_colors.py
-+ Reduce the number of colors in a image (aka Image quantization) using the K-Means algorithm. This is done by the function called k-means.py
++ Reduce the number of colors in a image (aka Image quantization) using the K-Means algorithm. This is done by the function called color_reduction_k_means.py
 
 The folder called test_images contains three images that can be run to show how the functions work.
 
