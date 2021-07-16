@@ -7,8 +7,7 @@ The folder called test_images contains three images that can be run to show how 
 
 For running the functions open the Jupyter Notebook called main_code.ipynb
 
-
 .. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/ecamo19/codecademy_projects/HEAD
+ :target: https://mybinder.org/v2/gh/ecamo19/image_color_count_and_color_reduction/HEAD
 
 
