@@ -1,4 +1,6 @@
 import argh
+import numpy as np
+
 
 # Count number of colors in image -----------------------------------------------
 
