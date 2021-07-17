@@ -5,7 +5,7 @@ This repository you can found the function for performing two tasks:
 
 The folder called test_images contains three images that can be use to show how the functions work.
 
-For running the functions open the Jupyter Notebook count_and_reduce_program.ipynb. 
+For running the functions open the Jupyter Notebook called count_and_reduce_program.ipynb. 
 
 .. image:: https://mybinder.org/badge_logo.svg
  :target: https://mybinder.org/v2/gh/ecamo19/image_color_count_and_color_reduction/HEAD
