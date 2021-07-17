@@ -6,12 +6,15 @@ import glob
 import os
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
+import argh
 
 # Load selfmade functions
 from functions.count_colors import *
 from functions.color_reduction_k_means import *
 
+
 def count_and_reduce():
+    
     """
     This function contains all for the color count and color reduction
     """
@@ -32,7 +35,7 @@ def count_and_reduce():
             break   
 
         elif path_to_image == "test":
-            path_to_image = "../image_color_count_and_color_reduction/test_images"
+            path_to_image = "test_images"
 
         # Read images available in the folder ----------------------------------
         print("\nImages available: ")
