@@ -24,7 +24,7 @@ def count_and_reduce():
     flag = True
     while True:
 
-    # Get image path from user ------------------------------------------------------
+    # Get image path from user -------------------------------------------------
         path_to_image = input("\n Where are your images stored? or enter the word test: ")
         if path_to_image == "quit":
             flag = False
@@ -32,9 +32,9 @@ def count_and_reduce():
             break   
 
         elif path_to_image == "test":
-            path_to_image = "../codecademy_projects/test_images"
+            path_to_image = "../image_color_count_and_color_reduction/test_images"
 
-        # Read images available in the folder ---------------------------------------------    
+        # Read images available in the folder ----------------------------------
         print("\nImages available: ")
 
         for each_image in os.listdir(path_to_image):
@@ -42,7 +42,7 @@ def count_and_reduce():
             if each_image.endswith('png') or each_image.endswith('jpg'):        
                 print(f'\t> {os.path.basename(each_image)}')
 
-        # Choose image -------------------------------------------------------------------
+        # Choose image ---------------------------------------------------------
         image_name = input('\nWhich image do you want to analize?: ')
         if image_name == "quit":
             flag = False
@@ -50,18 +50,18 @@ def count_and_reduce():
             break  
 
         else:
-            # Read images using PIL -------------------------------------------------
+            # Read images using PIL --------------------------------------------
             # image is not an array
             image = Image.open(f'{path_to_image}/{image_name}') 
 
             # Image for kmeans, convert image to array
             img_kmeans = np.array(image)
 
-            # Count colors function ---------------------------------------------------------
+            # Count colors function --------------------------------------------
 
             count_colors(image)
 
-            # Reduce colors -----------------------------------------------------------------
+            # Reduce colors ----------------------------------------------------
             print("\nDo you want to reduce the colors of your image:")
             quantization = input("yes or no: ")
 
