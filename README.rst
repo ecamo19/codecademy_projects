@@ -14,4 +14,4 @@ For running the program open the Jupyter Notebook called count_and_reduce_progra
 
 
 
-![Alt Text](./image_color_reduction.gif)
+![GIF](./image_color_reduction.gif)
