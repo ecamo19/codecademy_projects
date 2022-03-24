@@ -13,3 +13,5 @@ The folder called test_images contains three images that can be use to show how 
 For running the program open the Jupyter Notebook called count_and_reduce_program.ipynb. 
 
 
+
+![Alt Text](./image_color_reduction.gif)
